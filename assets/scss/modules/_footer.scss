@@ -1,0 +1,88 @@
+#footer-container {
+  @include breakpoint(small) {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background: rgba(0, 0,0,.65);
+  }
+
+  @include breakpoint(medium) {
+    position: fixed;
+    bottom: 0;
+  }
+
+  #footer {
+    padding: rem-calc(14) 0;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: $white;
+      font-size: $small-font-size;
+      font-style: italic;
+      line-height: 1.2rem;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    .footer-links {      
+        overflow: auto;
+
+      .menu {
+        @include breakpoint(small) {
+          width: 100%;
+          float: none;          
+        }
+        
+        @include breakpoint(medium) {
+            @include grid-column(8);  
+        }
+
+        li {
+          @include breakpoint(small) {
+            display: block;
+            text-align: right;
+          }
+
+          @include breakpoint(medium) {
+            display: inline-block;
+            text-align: initial;
+          }
+        }
+
+        .home-link {
+          font-family: 'Playfair Display';
+          font-style: normal;
+          font-size: rem-calc(28);
+          font-weight: bold;
+          padding-top: 0; 
+        }
+      }
+
+      .copyright {
+        @include breakpoint(small) {
+          text-align: right;
+        }
+        
+        @include breakpoint(medium) {
+            @include grid-column(4);  
+        }
+        
+
+        li {
+          line-height: 1.2rem;
+          padding: $menu-item-padding;
+          font-size: $small-font-size;
+          color: $white;
+        }
+      }
+    }
+  }
+}
