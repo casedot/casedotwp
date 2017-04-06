@@ -93,7 +93,7 @@ html {
     height: 100%;
 }
 
-body.home {
+body.page {
     @include breakpoint(small) {
         background: url(../images/pineapple.jpg) 50% center no-repeat;
         background-size: cover;
@@ -101,6 +101,19 @@ body.home {
     }
     @include breakpoint(medium) {
         background: url(../images/pineapple.jpg) center center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+body.home {
+    @include breakpoint(small) {
+        background: url(../images/palm-trees.jpg) 50% center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    @include breakpoint(medium) {
+        background: url(../images/palm-trees.jpg) center center no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
