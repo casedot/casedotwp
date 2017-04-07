@@ -22,7 +22,7 @@
             <div class="section-divider"></div>
 			<section class="footer-links">        
 				<ul class="menu">
-					<li class="menu-item"><a href="http://allyourbase.com/" class="home-link">c.</a></li>
+					<li class="menu-item first"><a href="http://allyourbase.com/" class="home-link">c.</a></li>
 					<li class="menu-item"><a href="http://github.com/casedot" target="_blank">github.com/casedot</a></li>
 					<li class="menu-item"><a href="http://behance.net/casedot" target="_blank">behance.net/casedot</a></li>
 				</ul>
